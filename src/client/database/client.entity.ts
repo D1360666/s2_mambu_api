@@ -1,0 +1,51 @@
+import {Column, 
+    Entity, 
+    JoinTable, 
+    OneToMany, 
+    PrimaryGeneratedColumn
+} from 'typeorm';
+@Entity({name: 'clients'})
+export class ClientEntity{
+@PrimaryGeneratedColumn()
+encodedKey:string;
+@PrimaryGeneratedColumn()
+id:string;
+@Column()
+state:string;
+@Column()
+creationDate:string;
+@Column()
+lastModifiedDate:string;
+@Column()
+activationDate:string;
+@Column()
+approvedDate:string;
+@Column()
+firstName:string;
+@Column()
+lastName:string;
+@Column()
+middleName:string;
+@Column()
+homePhone:string;
+@Column()
+mobilePhone:string;
+@Column()
+emailAddress:string;
+@Column()
+preferredLanguage:string;
+@Column()
+birthDate:string;
+@Column()
+gender:string;
+@Column()
+notes:string;
+@Column()
+clientRoleKey:string;
+@Column()
+loanCycle:string;
+@Column()
+groupLoanCycle:string;
+@Column()
+groupKeys:string;
+}
